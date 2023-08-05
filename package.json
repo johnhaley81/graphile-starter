@@ -13,7 +13,7 @@
     "pretest": "yarn workspaces foreach --verbose --topological --exclude ROOT --exclude docker-helpers run pretest",
     "test": "node scripts/test.js",
     "posttest": "yarn workspaces foreach --verbose --topological --exclude ROOT --exclude docker-helpers run posttest",
-    "test:watch": "node scripts/test.js --watch",
+    "test:watch": "node scripts/test.js --watchAll",
     "lint": "tsc -b && yarn prettier:all --check && yarn eslint .",
     "lint:fix": "yarn eslint --fix . && yarn prettier:all --write",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx,.graphql",
